@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>5 легенд Вінниччини</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #C0B061;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 120px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    @font-face {
+    font-family: pixel;
+    src: url(fonts/AuX_DotBitC_Xtra_Bold.ttf);
+}
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: pixel;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .text {
+        font-family: pixel;
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .map {
+      flex: 1;
+      position: relative;
+    }
+
+    .map img {
+      width: 100%;
+      height: auto;
+    }
+
+    .map .point {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .map .point:hover {
+      background-color: darkred;
+    }
+
+    .map .point span {
+      display: none;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .map .point:hover span {
+      display: block;
+    }
+
+    /* Positioning of the points on the map */
+    .point-vinnytsia {
+      top: 28%;
+      left: 50%;
+    }
+
+    .point-groholski {
+      top: 36%;
+      left: 48%;
+    }
+
+    .point-zviadky {
+      top: 45%;
+      left: 55%;
+    }
+
+    .point-chervona {
+      top: 61%;
+      left: 30%;
+    }
+
+    .point-monastyr {
+      top: 52%;
+      left: 65%;
+    }
+  </style>
+</head>
+<body>
+    <img style="position: absolute; top: 2%; right: 1%;width: 200px;height: 200px;"src="images/в1.png" alt="">
+    <a style="background-color: transparent;
+    border: none;
+    color: white;
+    padding: 35px 100px;
+    border-radius: 25%;" href="index.html"><button style="color: transparent;
+    background-color:#6D4200 ;
+    position: absolute;
+    padding: 15px 15px;
+    top: 5%;
+    left:2.5%;
+    border-radius: 50%;"><img src="images/back.png" alt=""></button></a>
+  <div class="container">
+    <h1>5 легенд Вінниччини</h1>
+    <div class="content">
+      <div class="text">
+        <p>
+          Це проєкт, що відкриває завісу над таємничими та
+          захоплюючими легендами регіону. Зануртесь у світ
+          стародавніх переказів, загадкових подій і
+          неймовірних історій, які живуть у серці Поділля.
+          Кожна легенда — це не просто розповідь, а частинка
+          культурної спадщини, яка переносить нас у минуле,
+          де межа між правдою і вигадкою стає розмитою.
+          Відкрийте для себе чарівний світ Вінниччини, де
+          історія і міфи зливаються в єдине ціле.
+        </p>
+      </div>
+      <div class="map">
+        <img src="images/map.png" alt="Мапа Вінниччини">
+        <div class="point point-vinnytsia" data-legend="Вінницький вовкулака">
+          <a href="worewolf.html"><span>Вінницький вовкулака</span></a>
+        </div>
+        <div class="point point-groholski" data-legend="Палац Грохольських">
+          <a href="dobro.html"><span>Палац Грохольських</span></a>
+        </div>
+        <div class="point point-zviadky" data-legend="Звіїдки в с. Подільське ліс">
+          <a href="where.html"><span>Звіїдки в с. Подільське ліс</span></a>
+        </div>
+        <div class="point point-chervona" data-legend="Червона криниця">
+          <a href="church.html"><span>Червона криниця</span></a>
+        </div>
+        <div class="point point-monastyr" data-legend="Монастир у с. Монастирок">
+          <a href="legend.html"><span>Монастир у с. Монастирок</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const points = document.querySelectorAll('.point');
+
+    points.forEach((point) => {
+      point.addEventListener('mouseover', () => {
+        point.classList.add('active');
+      });
+
+      point.addEventListener('mouseout', () => {
+        point.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

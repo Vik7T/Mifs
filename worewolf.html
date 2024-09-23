@@ -1,0 +1,263 @@
+<style>
+    *{
+        margin: 0;
+    }
+    .werwolf-section {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: #fff;
+      font-weight: 400;
+    }
+    
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 179px;
+      width: 100%;
+      align-items: start;
+      gap: 40px 100px;
+      flex-wrap: wrap;
+      padding: 23px 35px 40px;
+      font: 60px Jersey 10, sans-serif;
+    }
+    
+    .hero-background {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .hero-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 100px;
+      border-radius: 0;
+      margin-top: 16px;
+      max-width: 100%;
+    }
+    
+    .hero-title {
+        position: relative;
+        flex-grow: 1;
+        margin: auto 0;
+        font-size: 60px;
+        display: flex;
+        align-items: center; 
+        margin-left: 190px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      min-height: 8000px;
+      width: 100%;
+      padding: 2258px 0 872px;
+      font: 30px Inter, sans-serif;
+    }
+    
+    .content-container {
+        margin-top: 1500px;
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 0 80px;
+    }
+    
+    .intro-paragraph {
+      align-self: start;    }
+    
+    .location-description {
+      text-align: right;
+      align-self: end;
+      margin-top: 64px;
+    }
+    
+    .history-container {
+      position: relative;
+      align-self: center;
+      display: flex;
+      width: 100%;
+      max-width: 1257px;
+      flex-direction: column;
+      margin: 403px 0 -174px;
+    }
+    
+    .construction-details {
+      margin-right: 69px;
+
+    }
+    
+    .intelligence-info {
+      text-align: right;
+      align-self: end;
+      margin-top: 824px;
+    }
+    
+    .liberation-details {
+      align-self: start;
+      margin-top: 578px;
+    }
+    
+    .legacy-description {
+      color: #333;
+      text-align: center;
+      margin: 712px 12px 0 38px;
+    }
+    
+    @media (max-width: 991px) {
+      .hero-container {
+        max-width: 100%;
+        font-size: 40px;
+        padding: 0 20px;
+      }
+    
+      .hero-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+        padding: 100px 0;
+      }
+    
+      .content-container {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    
+      .location-description {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .history-container {
+        max-width: 100%;
+        margin: 40px 0 10px;
+      }
+    
+      .construction-details {
+        max-width: 100%;
+        margin-right: 10px;
+        margin-top: 400px;
+        margin-bottom: 100px;
+      }
+    
+      .intelligence-info {
+        max-width: 100%;
+        margin-top: 400px;
+      }
+    
+      .liberation-details {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .legacy-description {
+        max-width: 100%;
+        margin: 40px 10px 0 0;
+      }
+    }
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .back-button {
+        margin-right: 20px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 20; 
+        transition: transform 0.2s ease; 
+        background-image: url('images/back-arrow.png');
+        background-size: 70%; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }
+
+    .back-button:hover {
+        transform: scale(1.2); 
+    }
+    .hero-background {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-title {
+        position: relative;
+        flex-grow: 1;
+        margin: auto 0;
+        font-size: 60px;
+        display: flex;
+        align-items: center; 
+        margin-left: 190px;
+    }
+    @media (max-width: 991px) {
+        .hero-title {
+            max-width: 100%;
+            font-size: 40px;
+        }
+    }
+    </style>
+    
+    <section class="werwolf-section">
+      <header class="hero-container">
+        <img src="images/pixil-frame-0 1.png" alt="Werwolf headquarters background" class="hero-background" />
+        <div class="header-wrapper">
+            <button class="back-button" onclick="window.history.back();"></button>
+            <h1 class="hero-title">«Вінницький вовкулака»</h1>
+        </div>
+      </header>
+    
+      <main class="content-wrapper">
+        <img src="images/вер2.png" alt="Historical image of Werwolf headquarters" class="hero-background" />
+        <div class="content-container">
+            <article class="history-container">
+                <p class="intro-paragraph">У часи Другої світової війни, коли Європа і весь світ були охоплені смертельними сутичками, на сході України, поблизу Вінниці, була створена одна з найзагадковіших і найтаємніших військових баз нацистської Німеччини — ставка Гітлера під кодовою назвою «Вервольф».</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p class="location-description">Ця ставка, розташована всього за 8 км на північ від Вінниці, в районі сучасного селища Стрижавка, стала символом нацистської амбіції та стратегічних розрахунків. У ті роки, коли на Східному фронті тривали запеклі бої, а Гітлеру було потрібно місце для координації військових дій, «Вервольф» став ключовим пунктом для планування операцій не лише на фронті, але й для можливих подальших наступів у напрямку Ірану та Індії.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p class="construction-details">Будівництво «Вервольфа» почалося в жовтні 1941 року і тривало до липня 1943 року, коли першу чергу було здано в експлуатацію. Перш ніж отримати свою остаточну назву, ставка носила кодову назву «Eichenhain» — Дубовий гай. Після змін у стратегії і задумі Гітлера, її перейменували на «Werwolf» або «Wehrwolf» — Вовкулака або Озброєний вовк. Це ім'я символізувало ідеї агресії і боротьби.<br /><br />База являла собою справжнє військове місто, збудоване в лісі площею 2,5 км завдовжки та 300 м завширшки. Вона включала в себе ряд бункерів і будівель, подібних до основної ставки Гітлера «Вольфсшанце» у Східній Пруссії. Центральна зона, обнесена глибоким ровом і металевим парканом, містила бункер фюрера, приміщення для високопосадовців, спортивні зали та навіть казино. Загальна частина ставки була заповнена складськими приміщеннями і житловими будинками.<br /><br />Будівництво проводилося за участю німецької військової будівельної організації «Тодт» та ще п'яти німецьких компаній, а також примусових працівників — військовополонених і місцевих жителів. Під час будівництва загинуло близько 2000 осіб, а решту в'язнів, що вижили, перевезли без сліду. Цікаво, що існувала версія про те, що ставка могла використовувати вже існуючі укріплення, створені для радянського командування,<br />і могла мати розгалужені підземні ходи, які з'єднували її<br />з іншими таємними об'єктами.</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p class="intelligence-info">На початку 1942 року інформація про наявність ставки почала доходити до радянських підпільників. Завдяки розвідданим, що надходили від підпільних мереж, та інформації з газет, радянське командування дізналося про існування ставки і її призначення. Однак, незважаючи на ці дані, «Вервольф» продовжував функціонувати до березня 1944 року.</p>
+
+              <p class="liberation-details">Коли радянські війська звільнили Вінницю в березні 1944 року, ставка була частково захоплена, але багато будівель були знищені або вивезені. 16 березня 1944 року, перед остаточним відступом, німці підірвали «Вервольф» з використанням авіабомб, і вибухи були настільки потужними, що уламки розлетілися на значну відстань. Підземні частини були затоплені водою.<br /><br />Після війни територія ставки була ретельно обстежена за наказом Сталіна. Відкриття остаточних результатів показало, що більшість будівель знищена, а три основні бункери були пошкоджені, але залишилися.</p>
+              <p class="legacy-description">Відтоді «Вервольф» стала частиною історичної легенди. Хоча остаточні деталі залишаються нез'ясованими, ставка продовжує бути об'єктом зацікавленості для дослідників та істориків. Її таємничість і історія продовжують привертати увагу, а мітів про підземні комплекси і зв'язки з іншими таємними об'єктами лише додають їй загадковості.</p>
+            </article>
+          </div>
+    
+        
+      </main>
+    </section>

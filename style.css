@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.index{
+    background-image: url(images/pixil-frame-0\ 3.png);
+    background-repeat: no-repeat;
+}
+.guide{
+    background-color: #C0B061;
+    background-repeat: no-repeat;
+    display: inline-flexbox;
+}
+h1{
+    color: white;
+    font-family: pixel;
+    font-size: 50px;
+}
+h2{
+    color: white;
+    font-family: pixel;
+    font-size: 25px;
+}
+div{
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+@font-face {
+    font-family: pixel;
+    src: url(fonts/AuX_DotBitC_Xtra_Bold.ttf);
+}
+.button{
+position:absolute;
+  bottom: 5%;
+  right:5%;
+}
+.button1{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 35px 100px;
+    border-radius: 25%;
+}
+.map{
+    align-items: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 55%;
+}
+.back{
+    color: transparent;
+    background-color:#6D4200 ;
+    position: absolute;
+    padding: 15px 15px;
+    top: 2.5%;
+    left:2.5%;
+    border-radius: 50%;
+}
+.backbtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 35px 100px;
+    border-radius: 25%;
+}
+.map_detail{
+    display: flex; 
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+}
+.map_detail h1{
+    font-size: 100%;
+    width: 600px;
+}

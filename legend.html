@@ -1,0 +1,191 @@
+<style>
+    *{
+        margin: 0;
+    }
+    .monastery-section {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: #fff;
+        font-weight: 400;
+        align-items: center; 
+    }
+
+    .hero-banner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        min-height: 179px;
+        width: 100%;
+        gap: 40px 100px;
+        flex-wrap: wrap;
+        padding: 40px;
+        align-items: center; 
+        text-align: center;
+        font-family:AuX_DotBitC_Xtra_Bold; 
+    }
+
+    
+    @media (max-width: 991px) {
+        .hero-banner {
+            max-width: 100%;
+            font-size: 40px;
+            padding: 0 20px;
+        }
+    }
+
+    .hero-background {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    .hero-title {
+        position: relative;
+        flex-grow: 1;
+        margin: auto 0;
+        font-size: 60px;
+        display: flex;
+        align-items: center; 
+        margin-left: 190px;
+    }
+
+    .back-button {
+        margin-right: 20px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 20; 
+        transition: transform 0.2s ease; 
+        background-image: url('images/back-arrow.png');
+        background-size: 70%; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }
+
+    .back-button:hover {
+        transform: scale(1.2); 
+    }
+
+    @media (max-width: 991px) {
+        .hero-title {
+            max-width: 100%;
+            font-size: 40px;
+        }
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 5082px;
+        margin-top: -19px;
+        width: 100%;
+        align-items: center; 
+        justify-content: center; 
+        padding: 1399px 80px;
+        font: 30px Inter, sans-serif;
+        text-align: center; 
+    }
+
+    @media (max-width: 991px) {
+        .content-wrapper {
+            max-width: 100%;
+            padding: 100px 20px;
+        }
+    }
+
+    .story-container {
+        position: relative;
+        display: flex;
+        margin-bottom: -307px;
+        width: 100%;
+        max-width: 1136px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    @media (max-width: 991px) {
+        .story-container {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .story-intro,
+    .monastery-life,
+    .tatars-invasion,
+    .nuns-hiding,
+    .monastery-decline,
+    .legend-conclusion {
+        text-align: center; 
+        max-width: 100%; 
+        margin: 40px 0; 
+        margin-bottom: 200px;
+    }
+
+    .story-intro {
+        border: 1px solid #000;
+    }
+
+    @media (max-width: 991px) {
+        .story-intro,
+        .monastery-life,
+        .tatars-invasion,
+        .nuns-hiding,
+        .monastery-decline,
+        .legend-conclusion {
+            margin: 40px 4px; 
+        }
+    }
+</style>
+
+<section class="monastery-section">
+    <header class="hero-banner">
+        <img src="images/pixil-frame-0 1.png" alt="Monastery background" class="hero-background" />
+        <div class="header-wrapper">
+            <button class="back-button" onclick="window.history.back();"></button>
+            <h1 class="hero-title">"Монастирська легенда"</h1>
+        </div>
+    </header>
+    
+    <main class="content-wrapper">
+        <img src="images/Ченці 1.svg" alt="Monastery story background" class="hero-background" />
+        <article class="story-container">
+            <p class="story-intro">
+                У самому серці Поділля, серед мальовничих пагорбів і густих лісів, розташоване село Свинциці, нині відоме як Коржівка. На рубежі XV і XVI століть на місці стародавнього язичницького святилища, де колись збиралися волхви й служителі давніх богів, було зведено жіночий монастир. Це місце обрано не випадково — здавна вважалося, що тут перетинаються могутні сили землі та неба. Монастир, що стояв осторонь від галасливих шляхів і людських поселень, став тихим пристановищем для жінок, які прагнули присвятити своє життя молитвам і духовному подвигу.
+            </p>
+            <p class="monastery-life">
+                У тиші його стін лунали молитви, розпускалися ряси, а стежками монастирського саду неквапливо йшли зосереджені постаті черниць. Жінки з навколишніх сіл приходили сюди не лише задля духовного просвітлення, а й щоб навчитися мистецтвам, які передавалися з покоління в покоління — вишиванню, ткацтву, іконопису. У тих стінах плелися рушники, що ставали оберегами родин, і створювалися ікони, які освячували оселі.
+            </p>
+            <p class="tatars-invasion">Та життя монастиря різко змінилося, коли на землі Поділля рушили татарські орди. Багряний захід сонця був передвісником біди: здавалося, самі небеса застигли в очікуванні лиха. Татарські наїзники спустошували навколишні села, палили хати, забирали в полон людей. Серед хаосу і страху, що охопив усе довкола, настоятелька монастиря зрозуміла: зберегти святині від осквернення можна лише в таємниці. Разом із кількома найвірнішими черницями вона вирішила заховати найцінніше в підземеллях монастиря, виритих ще за часів давніх язичницьких жреців. Легенди свідчать, що підземелля тягнулися далеко вглиб, переходячи в стародавні катакомби, де колись ховалися люди в часи лихоліть. Туди, де темрява була настільки густою, що здавалося, вона поглинає саму душу.
+            </p>
+            <p class="nuns-hiding">Черниці замкнули себе в одній із глибоких печер, маючи лише свічки, молитовники та запаси їжі на шість років. Вони сподівалися, що інші черниці, яким вдалося втекти, зможуть врятувати їх, коли небезпека мине. Але дні переходили в місяці, а місяці — в роки. Час, що проходив у тісному підземеллі, перетворював їх життя на справжнє випробування. Однак навіть у темряві серця черниць залишалися непорушними: вони вірно молилися та вірні Богу.
+            </p>
+            <p class="monastery-decline">Коли небезпека нарешті минула, черниці вирішили вийти з підземелля, але те, що вони побачили, шокувало їх. Монастир стояв у руїнах. Пам'ять про колись величний заклад зникла, а земля навколо була засіяна гіркими слідами зруйнованих доль. Люди, які колись приходили за порадою та благословенням, тепер забули про їх існування. Лише старі легенди залишилися в народі, нагадуючи про дівчат, які, ризикуючи своїм життям, зберегли свята спадщина.
+            </p>
+            <p class="legend-conclusion">Відтоді минуло чимало років, але монастирська легенда продовжує жити в серцях людей. І хоча стіни зруйнованого монастиря більше не відображаються у дзеркалі часу, їхнє світло завжди сяятиме в тих, хто вірить у силу віри, любові та надії. 
+            </p>
+        </article>
+    </main>
+</section>
